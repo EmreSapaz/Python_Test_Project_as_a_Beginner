@@ -2,6 +2,8 @@
 import random
 import time
 from Animal_names import words
+import os
+import sys
 
 hangman_art = {0:("   ",
                   "   ",
@@ -82,13 +84,21 @@ def main():
             display_man(wrong_guess)
             display_answer(answer)
             print("YOU WIN!!")
-            is_running = False
+            ask = input("Wanna play again?(Y/N):").upper()
+            if ask == "Y":
+                main()
+            else:
+                is_running = False
 
         elif wrong_guess >= len(hangman_art) - 1 :
             display_man(wrong_guess)
             display_answer(answer)
             print("YOU LOSE!!")
-            is_running = False
+            ask = input("Wanna play again?(Y/N):").upper()
+            if ask == "Y":
+                main()
+            else:
+                is_running = False
 
 
 
