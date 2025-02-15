@@ -44,4 +44,8 @@ while is_playing:
 
     else:
         print(f"Wrong !! Your Final Score : {count}")
-        is_playing = False
+        ask = input("Wanna play again ?\nY or N:")
+        if ask.upper() != "Y":
+            is_playing = False
+        else:
+            count = 0
