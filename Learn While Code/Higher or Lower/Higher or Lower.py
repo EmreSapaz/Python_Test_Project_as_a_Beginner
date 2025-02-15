@@ -41,6 +41,7 @@ while is_playing:
         print(f"Correct !! Your Score : {count}")
         time.sleep(.5)
         first = second
+        print("\n" * 20 )
 
     else:
         print(f"Wrong !! Your Final Score : {count}")
@@ -49,3 +50,4 @@ while is_playing:
             is_playing = False
         else:
             count = 0
+            print("\n" * 20)
