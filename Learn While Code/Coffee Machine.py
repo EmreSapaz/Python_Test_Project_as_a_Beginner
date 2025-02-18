@@ -159,13 +159,3 @@ while True:
     if ask.lower() == "report":
         time.sleep(.5)
         print(f"Water  :  {Coffee_machine["Water"]}\nMilk   :  {Coffee_machine["Milk"]}\nCoffee :  {Coffee_machine["Coffee"]}\nMoney  :  ${Coffee_machine["Money"]}")
-
-
-
-
-
-
-
-
-
-
